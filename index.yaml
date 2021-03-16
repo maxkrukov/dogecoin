@@ -3,12 +3,12 @@ entries:
   dogecoin:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2021-03-16T21:57:09.557077153+02:00"
+    created: "2021-03-16T22:04:35.724614851+02:00"
     description: A Helm chart for Kubernetes
-    digest: a0e891b67d1ff058188d2f0e395d0905cb1fb626b2eb94df7855925405609edd
+    digest: 7f092adfb6b08a2e95ec5e433ed3611fefe17b457fa034f4c9dae8d268623352
     name: dogecoin
     type: application
     urls:
     - https://raw.githubusercontent.com/maxkrukov/dogecoin/main/dogecoin-0.1.0.tgz
     version: 0.1.0
-generated: "2021-03-16T21:57:09.554324094+02:00"
+generated: "2021-03-16T22:04:35.723841776+02:00"
