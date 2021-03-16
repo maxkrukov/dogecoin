@@ -23,14 +23,14 @@ rpcpassword: rpcpass
 blocknotify:
 
 image:
-  repository: kylemanna/dogecoind 
+  repository: 
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "latest"
+  tag:
 
 imagePullSecrets: []
 nameOverride: ""
-fullnameOverride: ""
+fullnameOverride: "dogecoin"
 
 environment: []
 
@@ -60,15 +60,10 @@ service:
   type: ClusterIP
   services:
   - name: rpc
-    targetPort: 8332
-    port: 8332
+    targetPort: 22555
+    port: 22555
     protocol: TCP
     # nodePort: 30032
-  - name: p2p
-    targetPort: 8333
-    port: 8333
-    protocol: TCP
-    # nodePort: 30033
   
 resources:
   limits: {}
@@ -92,7 +87,7 @@ ingress:
   hosts:
     - host: dogecoin-0.dom.ltd
       paths: ["/"]
-      servicePort: "8332"
+      servicePort: "22555"
   tls:
     - secretName: dogecoin-0-dom-ltd
       hosts:
