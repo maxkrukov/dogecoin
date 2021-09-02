@@ -15,4 +15,5 @@ data:
     blocknotify={{ .Values.blocknotify }}   
     {{- end }}
     rpcthreads=128
+    rpcworkqueue=128
     keypool=1
