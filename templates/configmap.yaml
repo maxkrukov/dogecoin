@@ -14,6 +14,6 @@ data:
     {{- if .Values.blocknotify }}
     blocknotify={{ .Values.blocknotify }}   
     {{- end }}
-    rpcthreads=128
-    rpcworkqueue=128
+    rpcthreads=16
+    rpcworkqueue=64
     keypool=1
