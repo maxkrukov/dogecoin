@@ -45,7 +45,7 @@ spec:
       initContainers:
         - name: copy-dogecoind-config
           image: busybox
-          command: ['sh', '-c', 'cp -vf /mnt/config/dogecoin.conf /mnt/data/dogecoin.conf']
+          command: ['sh', '-c', 'cp -vf /mnt/config/dogecoin.conf /mnt/data/dogecoin.conf && chmod 777 /mnt/data']
           volumeMounts:
             - name: data
               mountPath: /mnt/data
